@@ -1,0 +1,139 @@
+
+<section>
+  <div class="row m-0">
+    <div class="p-0" [ngClass]="menuExpand ? 'col-1' : 'col-2'">
+
+      <app-sidebar (sideBarToggle)="onSideBarClick($event)"></app-sidebar>
+    </div>
+    <div class="p-0" [ngClass]="menuExpand ? 'col-11' : 'col-10'">
+      <app-header></app-header>
+      <div class="row m-0 mt-3 top-cards">
+        <div class="col">
+          <mat-card class="d-flex justify-content-between">
+
+            <div id="chart">
+              <apx-chart
+                [series]="chartOptions.series"
+                [chart]="chartOptions.chart"
+                [plotOptions]="chartOptions.plotOptions"
+                [labels]="chartOptions.labels"
+              ></apx-chart>
+            </div>
+            <h4 class="mt-4 text-secondary pt-2">Some dummy text .. </h4>
+            <button mat-icon-button  class="position-absolute end-0 top-0">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+          </mat-card>
+        </div>
+        <div class="col">
+          <mat-card class="d-flex justify-content-between">
+
+            <div id="chart">
+              <apx-chart
+                [series]="chartOptions1.series"
+                [chart]="chartOptions1.chart"
+                [plotOptions]="chartOptions1.plotOptions"
+                [labels]="chartOptions1.labels"
+              ></apx-chart>
+            </div>
+            <h4 class="mt-4 text-secondary pt-2">Some dummy text .. </h4>
+            <button mat-icon-button  class="position-absolute end-0 top-0">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+          </mat-card>
+        </div>
+        <div class="col">
+          <mat-card class="d-flex justify-content-between">
+
+            <div id="chart">
+              <apx-chart
+                [series]="chartOptions2.series"
+                [chart]="chartOptions2.chart"
+                [plotOptions]="chartOptions2.plotOptions"
+                [labels]="chartOptions2.labels"
+              ></apx-chart>
+            </div>
+            <h4 class="mt-4 text-secondary pt-2">Some dummy text .. </h4>
+            <button mat-icon-button  class="position-absolute end-0 top-0">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+          </mat-card>
+        </div>
+        <div class="col">
+          <mat-card class="d-flex justify-content-between">
+
+            <div id="chart">
+              <apx-chart
+                [series]="chartOptions3.series"
+                [chart]="chartOptions3.chart"
+                [plotOptions]="chartOptions3.plotOptions"
+                [labels]="chartOptions3.labels"
+              ></apx-chart>
+            </div>
+            <h4 class="mt-4 text-secondary pt-2">Some dummy text .. </h4>
+            <button mat-icon-button  class="position-absolute end-0 top-0">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+          </mat-card>
+        </div>
+
+      </div>
+
+      <div class="row m-0 ">
+        <div class="col-12 col-md-3 mt-3">
+
+          <mat-card class="h-400">
+            <h3 class="fw-bold">Tasks Distribution</h3>
+          <div id="chart4">
+            <apx-chart
+              [series]="chartOptions4.series"
+              [chart]="chartOptions4.chart"
+              [labels]="chartOptions4.labels"
+              [responsive]="chartOptions4.responsive"
+            ></apx-chart>
+          </div>
+          </mat-card>
+
+        </div>
+        <div class="col-12 col-md mt-3">
+          <mat-card class="h-400">
+          <div id="chart5">
+            <apx-chart
+            [series]="chartOptions5.series"
+            [chart]="chartOptions5.chart"
+            [dataLabels]="chartOptions5.dataLabels"
+            [plotOptions]="chartOptions5.plotOptions"
+            [xaxis]="chartOptions5.xaxis"
+            [stroke]="chartOptions5.stroke"
+            [fill]="chartOptions5.fill"
+            [yaxis]="chartOptions5.yaxis"
+            [title]="chartOptions5.title"
+            [tooltip]="chartOptions5.tooltip"
+            [legend]="chartOptions5.legend"
+          ></apx-chart>
+          </div>
+          </mat-card>
+        </div>
+        <div class="col-12 col-md mt-3">
+          <mat-card class="h-400">
+          <div id="chart6">
+            <apx-chart
+            [series]="chartOptions6.series"
+            [chart]="chartOptions6.chart"
+            [dataLabels]="chartOptions6.dataLabels"
+            [plotOptions]="chartOptions6.plotOptions"
+            [xaxis]="chartOptions6.xaxis"
+            [stroke]="chartOptions6.stroke"
+            [fill]="chartOptions6.fill"
+            [yaxis]="chartOptions6.yaxis"
+            [title]="chartOptions6.title"
+            [tooltip]="chartOptions6.tooltip"
+            [legend]="chartOptions6.legend"
+          ></apx-chart>
+          </div>
+        </mat-card>
+        </div>
+      </div>
+    </div>
+</div>
+</section>
